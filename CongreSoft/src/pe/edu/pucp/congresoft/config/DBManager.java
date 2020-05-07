@@ -3,9 +3,15 @@ package pe.edu.pucp.congresoft.config;
 
 
 public class DBManager {
-    public String url="jdbc:mysql://"+
+    public String url;
+    public String username;
+    public String password;
+    
+    public DBManager(){
+        this.url="jdbc:mysql://"+
                     "lp2mysql.c8u9uevhhffp.us-east-1.rds.amazonaws.com"
             + ":3306/inf282";
-    public String username="admin";
-    public String password="abcd1234";
+        this.username="admin";
+        this.password="ABCD1234";
+    }
 }
